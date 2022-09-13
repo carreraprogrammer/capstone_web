@@ -1,0 +1,193 @@
+/* Variables */
+/* mixins */
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* li {
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/********** This is the mobile section until 768px *********************/
+nav {
+  height: 66px;
+}
+nav .nav-navigation {
+  display: none;
+}
+nav .logo-link {
+  display: none;
+}
+nav .campaign {
+  display: none;
+}
+nav .burger-menu {
+  height: 20px;
+  width: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+nav .burger-menu .burger-bar {
+  height: 5px;
+  width: 20px;
+  background-color: #272a31;
+}
+
+/************ Here start header ******************/
+header {
+  height: 55vh;
+  background-image: url(/Images/mobile-header.png);
+  background-position-x: center;
+  text-align: left;
+}
+header h1, header h3, header p {
+  margin-left: 19px;
+  margin-right: 19px;
+}
+header #header-title {
+  font-family: "Lato", sans-serif;
+  color: #ec5242;
+  border: 5px solid transparent;
+}
+header #header-subtitle {
+  font-size: 15px;
+  border: 5px solid transparent;
+}
+header #header-description {
+  border: 5px solid transparent;
+}
+header #location {
+  border: none;
+}
+
+/* Here start main section */
+main {
+  height: 100vh;
+  background-color: #272a31;
+  background-image: url(/Images/pattern_bg.png);
+  align-items: center;
+  color: #d3d3d3;
+}
+main #main-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 20%;
+  text-align: center;
+}
+main .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 100px;
+  opacity: 1;
+  margin-top: -2px;
+}
+main .activities-grid {
+  width: 100%;
+  margin-top: 10%;
+}
+main .activity {
+  height: 90px;
+  width: 95%;
+  background-color: rgba(211, 211, 211, 0.1529411765);
+  text-align: center;
+  align-items: center;
+  margin-top: 5%;
+}
+main .activity #activity-title {
+  color: #ec5242;
+}
+main .activity #activity-description {
+  margin: 0;
+}
+
+/********* Here start featured teachers section ***********/
+.featured-teachers #featured-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 20%;
+  text-align: center;
+  color: #272a31;
+}
+.featured-teachers .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 100px;
+  opacity: 1;
+  margin-top: -2px;
+}
+
+.teachers-grid {
+  width: 95%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.teachers-grid .teacher-img {
+  width: 120px;
+  height: 120px;
+  margin-right: 24px;
+}
+.teachers-grid .teacher-name {
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+}
+.teachers-grid .teacher-position {
+  font-size: 15px;
+  margin: 0;
+  color: #ec5242;
+  margin-top: 5px;
+}
+.teachers-grid .teacher-description {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.teachers-grid .teacher-div {
+  width: 50px;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/********* Here starts sponsor section ***********/
+.sponsors {
+  height: 100vh;
+  background-color: #272a31;
+}
+.sponsors .sponsors-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 20%;
+  text-align: center;
+}
+.sponsors .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 100px;
+  opacity: 1;
+  margin-top: -2px;
+  width: 50px;
+}
+.sponsors .sponsor-img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 40px;
+}/*# sourceMappingURL=styles.css.map */
