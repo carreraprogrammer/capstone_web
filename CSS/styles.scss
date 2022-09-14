@@ -48,6 +48,42 @@ body {
 nav {
 
   height: 66px;
+  align-items: center;
+
+  .nav-navigation-mobile {
+
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #d3d3d3f1;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+
+    li {
+      margin-top: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $orange;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .nav-navigation-mobile.is-active {
+    transform: translateX(0);
+  }
 
   .nav-navigation {
     display: none;
@@ -60,6 +96,7 @@ nav {
   .campaign {
     display: none;
   }
+
   .burger-menu {
     display: flex;
     height: 20px;
@@ -67,11 +104,25 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 10%;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
     .burger-bar {
       height: 5px;
       width: 20px;
       background-color: $black;
     }
+  }
+
+  .burger-menu.is-active .burger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu.is-active .burger-bar:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+  
+  .burger-menu.is-active .burger-bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
   }
 }
 
@@ -117,7 +168,7 @@ header {
 /* Here start main section */
 
 main {
-  height: 100vh;
+  height: auto;
   background-color: $black;
   background-image: url(/Images/pattern_bg.png);
   align-items: center;
@@ -160,6 +211,7 @@ main {
   background-color: $orange;
   border: none;
   font-size: 1.5rem;
+  margin-bottom: 20%;
 }
 
 /********* Here start featured teachers section ***********/ 
@@ -228,6 +280,10 @@ footer {
     width: 30%;
     height: auto;
     margin-right: 24px;
+    margin-left: 24px;
+  }
+  p {
+    margin-right: 24px;
   }
 }
 /**************** Here start desktop version ***********************/
@@ -239,6 +295,11 @@ footer {
     height: 66px;
     justify-content: left;
     align-items: center;
+    border-bottom: 2px solid $white;
+
+    .nav-navigation-mobile{
+      display: none;
+    }
   
     .nav-navigation {
       margin-left: 30%;
@@ -369,6 +430,10 @@ footer {
     .divisor {
       @include divisor;
     }
+    .teacher{
+      margin-left: 24px;
+      margin-right: 24px;
+    }
   }
   
   .teachers-grid {
@@ -376,14 +441,10 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: 1fr 1fr;
-    .teacher-div {
-      width: 50px;
-      margin: 0;
-      margin-top: 5px;
-      margin-bottom: 3px;
-      font-weight: normal;
-      font-style: italic;
-    }
+   .teacher-img {
+    width: 200px;
+    height: 200px;
+   }
   }
 
 /***************** Here start sponsors section *********************/

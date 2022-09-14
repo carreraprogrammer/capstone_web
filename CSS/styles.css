@@ -23,6 +23,37 @@ body {
 /********** This is the mobile section until 768px *********************/
 nav {
   height: 66px;
+  align-items: center;
+}
+nav .nav-navigation-mobile {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.9450980392);
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+nav .nav-navigation-mobile li {
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ec5242;
+}
+nav .nav-navigation-mobile li a {
+  text-decoration: none;
+  color: black;
+}
+nav .nav-navigation-mobile.is-active {
+  transform: translateX(0);
 }
 nav .nav-navigation {
   display: none;
@@ -40,11 +71,22 @@ nav .burger-menu {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 10%;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
 }
 nav .burger-menu .burger-bar {
   height: 5px;
   width: 20px;
   background-color: #272a31;
+}
+nav .burger-menu.is-active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+nav .burger-menu.is-active .burger-bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+nav .burger-menu.is-active .burger-bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 /************ Here start header ******************/
@@ -84,7 +126,7 @@ header #location #location-date {
 
 /* Here start main section */
 main {
-  height: 100vh;
+  height: auto;
   background-color: #272a31;
   background-image: url(/Images/pattern_bg.png);
   align-items: center;
@@ -130,6 +172,7 @@ main .activity #activity-description {
   background-color: #ec5242;
   border: none;
   font-size: 1.5rem;
+  margin-bottom: 20%;
 }
 
 /********* Here start featured teachers section ***********/
@@ -201,6 +244,10 @@ footer #creative-commons-logo {
   width: 30%;
   height: auto;
   margin-right: 24px;
+  margin-left: 24px;
+}
+footer p {
+  margin-right: 24px;
 }
 
 /**************** Here start desktop version ***********************/
@@ -209,6 +256,10 @@ footer #creative-commons-logo {
     height: 66px;
     justify-content: left;
     align-items: center;
+    border-bottom: 2px solid #d3d3d3;
+  }
+  nav .nav-navigation-mobile {
+    display: none;
   }
   nav .nav-navigation {
     margin-left: 30%;
@@ -333,19 +384,19 @@ footer #creative-commons-logo {
     opacity: 1;
     margin-top: -2px;
   }
+  .featured-teachers .teacher {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
   .teachers-grid {
     width: 80%;
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: 1fr 1fr;
   }
-  .teachers-grid .teacher-div {
-    width: 50px;
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 3px;
-    font-weight: normal;
-    font-style: italic;
+  .teachers-grid .teacher-img {
+    width: 200px;
+    height: 200px;
   }
   /***************** Here start sponsors section *********************/
   #sponsors-home {

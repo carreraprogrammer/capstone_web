@@ -23,26 +23,26 @@
     </head>
 
     <body>
-    <!--Here start navbar cuztomitation-->
+    <!--Here start navbar section-->
 
-    <nav class="navbar navbar-light column">
+    <nav class="navbar-light d-flex flex-row">
 
-      <div class="burger-menu d-flex">
+      <div class="burger-menu">
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
       </div>
       <a
-      href=""
-      class="logo-link col-md-6">
-        <img src="Images/fire-logo.png" alt="Logo">
+      href="home.html"
+      class="logo-link">
+        <img class="logo-img" src="Images/fire-logo.png" alt="Logo">
       </a>
-      <ul class="nav-navigation col-md-3 row">
-        <li class="col">About</li>
-        <li class="col">Program</li>
-        <li class="col">Join</li>
-        <li class="col">sponsor</li>
-        <li class="col">News</li>
+      <ul class="nav-navigation flex-row">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">sponsor</a></li>
+        <li><a href="#">News</a></li>
       </ul>
       <button class="campaign">
         CC Campaign
@@ -53,17 +53,16 @@
   <!--Here ends navbar -->
 
     <header class="header d-flex flex-column justify-content-center">
-      <h3 id="header-subtitle">Hello, Music People!</h3>
-      <h1 id="header-title">MUSIC FIRE CAMP GLOBAL 2022</h1>
-      <p id="header-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi illum quis optio, dignissimos doloremque omnis placeat, rem veritatis enim eveniet repellat corporis facilis fugiat autem maxime vel blanditiis necessitatibus corrupti?</p>
-     <p class="header-contact"><br>Please contact us Per Email for any questions <br> about Fire Camp Global Summit <br><b><u>firecamp15@gmail.com</u></b></p>
+      <h1 id="header-title">FIRE MUSIC CAMP <br> GLOBAL SUMMIT 2022</h1>
+      <p id="header-description" class="d-flex align-items-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi illum quis optio, dignissimos doloremque omnis placeat, rem veritatis enim eveniet repellat corporis facilis fugiat autem maxime vel blanditiis necessitatibus corrupti?. Lorem ipsum dolor sit amet.</p>
+      <p class="header-contact"><br>Please contact us Per Email for any questions <br> about Fire Camp Global Summit <br><b><u>firecamp15@gmail.com</u></b></p>
     </header>
     
 <!-- Here start Logo section -->
     <section class="logo-section d-flex flex-column align-items-center">
-      <h2 class="logo-title">Fire Camp Global <br> Summit Logo 2022</h2>
+      <h2 class="logo-title">Fire Camp Global Summit Logo 2022</h2>
       <hr class="divisor">
-      <p class="logo-description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque commodi corrupti autem architecto eius, reiciendis. </p>
+      <p class="logo-description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque commodi corrupti autem architecto eius, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis maiores itaque fugiat accusamus nostrum aperiam deleniti libero fuga, voluptatum soluta a necessitatibus maxime quibusdam inventore harum quos sequi nulla? </p>
       <div class="logo-container d-flex justify-content-center">
         <img class="logo-section-img" src="Images/fire-logo.png" alt=""/>
       </div>
@@ -88,15 +87,31 @@
 
  <!-- Here starts sponsors section -->
   
-    <section class="sponsors d-flex flex-column align-items-center">
+    <!-- Here starts sponsors section -->
+  
+    <section id="sponsors-about" class="sponsors align-items-center">
     
       <h2 class="sponsors-title">Sponsors</h2>
       <hr class="divisor">
-      <img class="sponsor-img" src="Images/sponsor_1.png" alt="">
-      <img class="sponsor-img" src="Images/sponsor_2.png" alt="">
-      <img class="sponsor-img" src="Images/sponsor_3.png" alt="">
-      <img class="sponsor-img" src="Images/sponsor_4.png" alt="">
-    
+      <div class="sponsors-container">
+        <img class="sponsor-img" src="Images/sponsor_1.png" alt="">
+        <img class="sponsor-img" src="Images/sponsor_2.png" alt="">
+        <img class="sponsor-img" src="Images/sponsor_3.png" alt="">
+        <img class="sponsor-img" src="Images/sponsor_4.png" alt="">
+      </div>
+  
     </section>
+
+      <!-- Here start the footer section -->
+
+      <footer class="d-flex justify-content-center align-items-center">
+
+        <img id="creative-commons-logo" src="Images/white_cc_logo.png" alt="">
+        <div class="license">
+          <p> 2015 Design of Creative Commons Korea. <br> Some rights reserved </p>
+        </div>
+
+      </footer>
+
   </body>
 </html>

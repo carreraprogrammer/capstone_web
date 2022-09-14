@@ -12,7 +12,6 @@ $white: #d3d3d3;
   background-color: $orange;
   width: 50px;
   opacity: 1;
-  margin-top: -2px;
 }
 
 @mixin section-title {
@@ -54,19 +53,21 @@ body {
 nav {
 
   height: 66px;
-  
+  align-items: center;
+
   .nav-navigation {
     display: none;
   }
-  
+
   .logo-link {
     display: none;
   }
-  
+
   .campaign {
     display: none;
   }
   .burger-menu {
+    display: flex;
     height: 20px;
     width: 20px;
     flex-direction: column;
@@ -105,7 +106,7 @@ header {
     }
 }
 
-/************ HEere start logo section ****************/
+/************ Here start logo section ****************/
 
 .logo-section {
   height: auto;
@@ -114,6 +115,7 @@ header {
   .logo-title {
     @include section-title;
     color: $black;
+    width: 70%;
     }
     .divisor {
     @include divisor;
@@ -184,14 +186,23 @@ header {
 /********* Here starts sponsor section ***********/ 
 
 .sponsors {
-    height: 100vh;
+    height: auto;
     background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .sponsors-title {
       @include section-title;
     }
     .divisor {
       @include divisor;
       width: 50px;
+    }
+    .sponsors-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
     }
     .sponsor-img {
       max-width: 80%;
@@ -200,10 +211,181 @@ header {
     }
   }
 
+/**************** Here start footer section ***********************/
+
+footer {
+  height: 30vh;
+  background-color: $black;
+  color: $white;
+  #creative-commons-logo {
+    width: 30%;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 24px;
+  }
+  p {
+    margin-right: 24px;
+  }
+}
 /**************** Here start desktop version ***********************/
 
 @media screen and (min-width: 768px)  {
 
+  nav {
+
+    height: 66px;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 2px solid $white;
+
+    .nav-navigation {
+      margin-left: 30%;
+      margin-right: 1%;
+      display: flex;
+      flex-basis: 30%;
+      height: 30px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        color: $black;
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+    }
+  
+    .logo-link {
+      height: 66px;
+      width: 70px;
+      align-items: center;
+      display: flex;
+      margin-left: 15%;
+      .logo-img {
+        height: 50px;
+        width: auto;
+      }
+    }
+    .campaign {
+      display: block;
+      margin-right: 24px;
+      margin-top: 0;
+      height: 50px;
+      width: 140px;
+      border: 5px solid $orange;
+      margin-right: 15%;
+    }
+    .burger-menu {
+      display: none;
+    }
+  } 
+
+  /************ Here start header ******************/
+
+  header {
+    height: 100vh;
+    background-image: url(/Images/about_bg_01.png);
+    background-color: #d3d3d392;
+    background-blend-mode: multiply;
+
+    background-position-x: left;
+    text-align: center;
+    align-items: center;
+    #header-subtitle {
+      color: $orange;
+      font-size: 2rem;
+    }
+    #header-title {
+      font-size: 4rem;
+    }
+    #header-description {
+      @include section-description($black);
+      border: 4px solid $white;
+      background-color: white;
+      width: 60%;
+      height: 20%;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  /************ Here start logo section ****************/
+
+  .logo-section {
+    height: auto;
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    .logo-title {
+      @include section-title;
+      color: $black;
+      padding: 0;
+      margin-top: 50px;
+      }
+      .divisor {
+      @include divisor;
+      margin-top: 24px;
+      }
+      .logo-description {
+        width: 50%;
+      }
+    .logo-container {
+      width: 25%;
+      margin-bottom: 50px;
+    }
+  }
+
+  /************ Here start past camp section ****************/
+
+  .past-camps-section {
+    height: auto;
+    .past-camps-title {
+      @include section-title;
+      padding: 0;
+      margin-top: 50px;
+      color: $black;
+    }
+    .divisor{
+      @include divisor;
+      margin-top: 24px;
+    }
+    .past-camps-description {
+      @include section-description($black);
+      width: 30%;
+    }
+    .examples-past-camps {
+      width: 60%;
+      margin-bottom: 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 50px;
+      gap: 24px;
+      .camp-2018 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .past-camp-date {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $white;
+  }
+
+  .past-camp-location {
+    font-size: 1rem;
+    font-weight: normal;
+    color: $white;
+  }
+
+  #sponsors-about {
+    display: none;
+  }
+
+  footer {
+    #creative-commons-logo {
+      width: 10%;
+    }
+  }
 }
 
 
