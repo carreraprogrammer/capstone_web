@@ -24,6 +24,45 @@ nav {
   height: 66px;
   align-items: center;
 }
+nav .nav-navigation-mobile {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.9450980392);
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+nav .nav-navigation-mobile li {
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ec5242;
+}
+nav .nav-navigation-mobile li a {
+  text-decoration: none;
+  color: black;
+}
+nav .nav-navigation-mobile #nav-logo {
+  border-bottom: none;
+  position: fixed;
+  top: 50px;
+  height: auto;
+}
+nav .nav-navigation-mobile #nav-logo img {
+  width: 150px;
+}
+nav .nav-navigation-mobile.is-active {
+  transform: translateX(0);
+}
 nav .nav-navigation {
   display: none;
 }
@@ -40,11 +79,22 @@ nav .burger-menu {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 10%;
+  z-index: 1;
 }
 nav .burger-menu .burger-bar {
   height: 5px;
   width: 20px;
   background-color: #272a31;
+  transition: transform 1s ease-in-out;
+}
+nav .burger-menu.is-active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+nav .burger-menu.is-active .burger-bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+nav .burger-menu.is-active .burger-bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 /************ Here start header ******************/
@@ -138,6 +188,7 @@ header .header-contact {
 .past-camps-section .examples-past-camps {
   width: 90%;
   margin-bottom: 20%;
+  cursor: pointer;
 }
 .past-camps-section .examples-past-camps .camp-2015 {
   background: url(/Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
@@ -145,6 +196,7 @@ header .header-contact {
   background-size: cover;
   width: 100%;
   height: 250px;
+  transition: transform 0.5s ease;
 }
 .past-camps-section .examples-past-camps .camp-2018 {
   background: url(/Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
@@ -153,6 +205,15 @@ header .header-contact {
   height: 250px;
   margin-top: 24px;
   width: 100%;
+  transition: 0.5s ease;
+}
+.past-camps-section .camp-2018:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+.past-camps-section .camp-2015:hover {
+  transform: scale(1.1);
+  background-color: transparent;
 }
 
 .past-camp-date {
@@ -224,6 +285,9 @@ footer p {
     align-items: center;
     border-bottom: 2px solid #d3d3d3;
   }
+  nav .nav-navigation-mobile {
+    display: none;
+  }
   nav .nav-navigation {
     margin-left: 30%;
     margin-right: 1%;
@@ -239,6 +303,18 @@ footer p {
     color: #272a31;
     margin-left: 12px;
     margin-right: 12px;
+  }
+  nav .nav-navigation a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #ec5242;
+            text-decoration-color: #ec5242;
+  }
+  nav .nav-navigation a:active {
+    color: #ec5242;
+  }
+  nav .nav-navigation .actual-page {
+    color: #ec5242;
+    font-weight: 700;
   }
   nav .logo-link {
     height: 66px;

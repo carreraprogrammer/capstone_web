@@ -49,11 +49,54 @@ body {
 }
 
 /********** This is the mobile section until 768px *********************/
-
 nav {
 
   height: 66px;
   align-items: center;
+
+  .nav-navigation-mobile {
+
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #d3d3d3f1;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+
+    li {
+      margin-top: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $orange;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    #nav-logo {
+      border-bottom: none;
+      position: fixed;
+      top: 50px;
+      height: auto;
+      img{
+        width: 150px;
+      }
+    }
+  }
+
+  .nav-navigation-mobile.is-active {
+    transform: translateX(0);
+  }
 
   .nav-navigation {
     display: none;
@@ -66,6 +109,7 @@ nav {
   .campaign {
     display: none;
   }
+
   .burger-menu {
     display: flex;
     height: 20px;
@@ -73,13 +117,29 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 10%;
+    z-index: 1; 
+
     .burger-bar {
       height: 5px;
       width: 20px;
       background-color: $black;
+      transition: transform 1s ease-in-out;
     }
   }
+
+  .burger-menu.is-active .burger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu.is-active .burger-bar:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+  
+  .burger-menu.is-active .burger-bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
 }
+
 
 /************ Here start header ******************/
 
@@ -153,12 +213,15 @@ header {
   .examples-past-camps {
     width: 90%;
     margin-bottom: 20%;
+    cursor: pointer;
+    
     .camp-2015 {
       background: url(/Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
       background-blend-mode: multiply;
       background-size: cover;
       width: 100%;
       height: 250px;
+      transition: transform 0.5s ease;
     }
     .camp-2018 {
       background: url(/Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
@@ -167,8 +230,20 @@ header {
       height: 250px;
       margin-top: 24px;
       width: 100%;
+      transition: 0.5s ease;
     }
   }
+  
+  .camp-2018:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+  }
+
+  .camp-2015:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+  }
+  
 }
 
 .past-camp-date {
@@ -237,6 +312,10 @@ footer {
     justify-content: left;
     align-items: center;
     border-bottom: 2px solid $white;
+    
+    .nav-navigation-mobile {
+      display: none;
+    }
 
     .nav-navigation {
       margin-left: 30%;
@@ -247,11 +326,26 @@ footer {
       margin-top: 20px;
       align-items: center;
       justify-content: center;
+
       a{
         text-decoration: none;
         color: $black;
         margin-left: 12px;
         margin-right: 12px;
+      }
+
+      a:hover {
+        text-decoration:underline;
+        text-decoration-color: $orange;
+      }
+
+      a:active {
+        color: $orange;
+      }
+
+      .actual-page {
+        color: $orange;
+        font-weight: 700;
       }
     }
   

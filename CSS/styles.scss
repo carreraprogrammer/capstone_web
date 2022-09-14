@@ -79,6 +79,15 @@ nav {
         color: black;
       }
     }
+    #nav-logo {
+      border-bottom: none;
+      position: fixed;
+      top: 50px;
+      height: auto;
+      img{
+        width: 150px;
+      }
+    }
   }
 
   .nav-navigation-mobile.is-active {
@@ -103,13 +112,14 @@ nav {
     width: 20px;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10%;
-    z-index: 1;
-    transition: transform 0.5s ease-in-out;
+    margin-left: 19px;
+    z-index: 1; 
+
     .burger-bar {
       height: 5px;
       width: 20px;
       background-color: $black;
+      transition: transform 1s ease-in-out;
     }
   }
 
@@ -153,11 +163,14 @@ header {
   }
   #header-description-container {
     border: 5px solid $white;
+    width: 90%;
+    margin-left: 19px;
   }
 
   #location {
     border: none;
     text-align: center;
+    margin-top: 24px;
     #location-date {
       font-weight: 700;
       color: $black;
@@ -189,8 +202,8 @@ main {
   }
 
   .activity {
-    height: 90px;
-    width: 95%;
+    height: 120px;
+    width: 90%;
     background-color: #d3d3d327;
     text-align: center;
     align-items: center;
@@ -275,7 +288,9 @@ main {
 /**************** Here start footer section ***********************/
 
 footer {
-  height: 30vh;
+  height: 20vh;
+  border-top: 2px solid $white;
+  background-color: $white;
   #creative-commons-logo {
     width: 30%;
     height: auto;
@@ -315,6 +330,15 @@ footer {
         color: $black;
         margin-left: 12px;
         margin-right: 12px;
+      }
+      
+      a:hover {
+        text-decoration:underline;
+        text-decoration-color: $orange;
+      }
+
+      a:active {
+        color: $orange;
       }
     }
   
@@ -467,5 +491,9 @@ footer {
         margin-right: 25px;
       }
     }
+  }
+  
+  footer {
+    background-color: white;
   }
 }

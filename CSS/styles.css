@@ -52,6 +52,15 @@ nav .nav-navigation-mobile li a {
   text-decoration: none;
   color: black;
 }
+nav .nav-navigation-mobile #nav-logo {
+  border-bottom: none;
+  position: fixed;
+  top: 50px;
+  height: auto;
+}
+nav .nav-navigation-mobile #nav-logo img {
+  width: 150px;
+}
 nav .nav-navigation-mobile.is-active {
   transform: translateX(0);
 }
@@ -70,14 +79,14 @@ nav .burger-menu {
   width: 20px;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 10%;
+  margin-left: 19px;
   z-index: 1;
-  transition: transform 0.5s ease-in-out;
 }
 nav .burger-menu .burger-bar {
   height: 5px;
   width: 20px;
   background-color: #272a31;
+  transition: transform 1s ease-in-out;
 }
 nav .burger-menu.is-active .burger-bar:nth-child(2) {
   opacity: 0;
@@ -114,10 +123,13 @@ header #header-subtitle {
 }
 header #header-description-container {
   border: 5px solid #d3d3d3;
+  width: 90%;
+  margin-left: 19px;
 }
 header #location {
   border: none;
   text-align: center;
+  margin-top: 24px;
 }
 header #location #location-date {
   font-weight: 700;
@@ -151,8 +163,8 @@ main .activities-grid {
   flex-direction: column;
 }
 main .activity {
-  height: 90px;
-  width: 95%;
+  height: 120px;
+  width: 90%;
   background-color: rgba(211, 211, 211, 0.1529411765);
   text-align: center;
   align-items: center;
@@ -238,7 +250,9 @@ main .activity #activity-description {
 
 /**************** Here start footer section ***********************/
 footer {
-  height: 30vh;
+  height: 20vh;
+  border-top: 2px solid #d3d3d3;
+  background-color: #d3d3d3;
 }
 footer #creative-commons-logo {
   width: 30%;
@@ -276,6 +290,14 @@ footer p {
     color: #272a31;
     margin-left: 12px;
     margin-right: 12px;
+  }
+  nav .nav-navigation a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #ec5242;
+            text-decoration-color: #ec5242;
+  }
+  nav .nav-navigation a:active {
+    color: #ec5242;
   }
   nav .logo-link {
     height: 66px;
@@ -425,5 +447,8 @@ footer p {
   #sponsors-home .sponsors-container .sponsor-img {
     margin-left: 25px;
     margin-right: 25px;
+  }
+  footer {
+    background-color: white;
   }
 }/*# sourceMappingURL=styles.css.map */
