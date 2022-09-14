@@ -14,8 +14,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
   <!--Here are the icons-->
 
     <script src="https://kit.fontawesome.com/321e54ee43.js" crossorigin="anonymous"></script>
@@ -25,24 +25,24 @@
 
   <!--Here start navbar cuztomitation-->
 
-    <nav class="navbar navbar-light column">
+    <nav class="navbar-light d-flex flex-row">
 
-      <div class="burger-menu d-flex">
+      <div class="burger-menu">
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
       </div>
       <a
       href=""
-      class="logo-link col-md-6">
-        <img src="Images/fire-logo.png" alt="Logo">
+      class="logo-link">
+        <img class="logo-img" src="Images/fire-logo.png" alt="Logo">
       </a>
-      <ul class="nav-navigation col-md-3 row">
-        <li class="col">About</li>
-        <li class="col">Program</li>
-        <li class="col">Join</li>
-        <li class="col">sponsor</li>
-        <li class="col">News</li>
+      <ul class="nav-navigation flex-row">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">sponsor</a></li>
+        <li><a href="#">News</a></li>
       </ul>
       <button class="campaign">
         CC Campaign
@@ -56,13 +56,13 @@
   
     <header class="header d-flex flex-column justify-content-center">
       <h3 id="header-subtitle">Hello, Music People!</h3>
-      <h1 id="header-title">MUSIC FIRE CAMP GLOBAL 2022</h1>
-      <div id="header-description">
+      <h1 id="header-title">FIRE MUSIC CAMP<br> GLOBAL SUMMIT <br>2022</h1>
+      <div id="header-description-container">
         <p id="header-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti optio voluptas exercitationem.</p>
       </div>
-      <div id="location" class="text-center">
-        <h3>2022.12.12(WED) ~ 21(SUN)</h3>
-        <p>@ Buckskin State Park, Arizona</p>
+      <div id="location">
+        <h3 id="location-date">2022.12.12(WED) ~ 21(SUN)</h3>
+        <p id="location-info">@ Buckskin State Park, Arizona</p>
       </div>
     </header>
   
@@ -71,120 +71,143 @@
     <main class="d-flex flex-column">
       <h2 id="main-title">Main Activities</h2>
       <hr class="divisor">
-      <dv class="activities-grid d-flex flex-column align-items-center">
+      <div class="activities-grid d-flex align-items-center">
   
-        <div class="activity d-flex flex-row align-items-center">
+        <div class="activity d-flex align-items-center">
           <img ic="activity-img" src="Images/activity-icon-01.png" alt="">
           <h4 id="activity-title" class="col-2">Title</h4>
           <p id="activity-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
         </div>
   
-        <div class="activity d-flex flex-row align-items-center">
+        <div class="activity d-flex align-items-center">
           <img ic="activity-img" src="Images/activity-icon-01.png" alt="">
           <h4 id="activity-title" class="col-2">Title</h4>
           <p id="activity-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
         </div>
   
-        <div class="activity d-flex flex-row align-items-center">
+        <div class="activity d-flex align-items-center">
           <img ic="activity-img" src="Images/activity-icon-01.png" alt="">
           <h4 id="activity-title" class="col-2">Title</h4>
           <p id="activity-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
         </div>
   
-        <div class="activity d-flex flex-row align-items-center">
+        <div class="activity d-flex align-items-center">
           <img ic="activity-img" src="Images/activity-icon-01.png" alt="">
           <h4 id="activity-title" class="col-2">Title</h4>
           <p id="activity-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
         </div>
   
-        <div class="activity d-flex flex-row align-items-center">
+        <div class="activity d-flex align-items-center">
           <img ic="activity-img" src="Images/activity-icon-01.png" alt="">
           <h4 id="activity-title" class="col-2">Title</h4>
           <p id="activity-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
         </div>
-      </dv>
+
+      </div>
+
+      <button id="join-btn">Join Fire Music Camp 2022</button>
+
     </main>
   
   
 <!-- Here starts featured teachers section -->
 
-  <section class="featured-teachers d-flex flex-column align-items-center">
-  
-    <h2 id="featured-title">Featured Teachers</h2>
-    <hr class="divisor">
-  
-  <!-- Here starts the featured grid  -->
-  
-    <div class="teachers-grid"> 
-  
-      <div class="teacher d-flex flex-row align-items-center">
-        <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
-        <div class="teacher-name col-8">
-          <h3 class="teacher-name">Yochai Benkler</h3>
-          <p class="teacher-position">Berkman professor of music</p>
-          <hr class="teacher-div">
-          <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+    <section class="featured-teachers d-flex flex-column align-items-center">
+    
+      <h2 id="featured-title">Featured Teachers</h2>
+      <hr class="divisor">
+    
+<!-- Here starts the featured grid  -->
+    
+      <div class="teachers-grid"> 
+    
+        <div class="teacher d-flex flex-row align-items-center">
+          <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
+          <div class="teacher-name col-8">
+            <h3 class="teacher-name">Yochai Benkler</h3>
+            <p class="teacher-position">Berkman professor of music</p>
+            <hr class="teacher-div">
+            <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+          </div>
+        </div>
+    
+        <div class="teacher d-flex flex-row align-items-center">
+          <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
+          <div class="teacher-name col-8">
+            <h3 class="teacher-name">Yochai Benkler</h3>
+            <p class="teacher-position">Berkman professor of music</p>
+            <hr class="teacher-div">
+            <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+          </div>
+        </div>
+    
+        <div class="teacher d-flex flex-row align-items-center">
+          <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
+          <div class="teacher-name col-8">
+            <h3 class="teacher-name">Yochai Benkler</h3>
+            <p class="teacher-position">Berkman professor of music</p>
+            <hr class="teacher-div">
+            <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+          </div>
+        </div>
+    
+        <div class="teacher d-flex flex-row align-items-center">
+          <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
+          <div class="teacher-name col-8">
+            <h3 class="teacher-name">Yochai Benkler</h3>
+            <p class="teacher-position">Berkman professor of music</p>
+            <hr class="teacher-div">
+            <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+          </div>
+        </div>
+    
+        <div class="teacher d-flex flex-row align-items-center">
+          <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
+          <div class="teacher-name col-8">
+            <h3 class="teacher-name">Yochai Benkler</h3>
+            <p class="teacher-position">Berkman professor of music</p>
+            <hr class="teacher-div">
+            <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+          </div>
+        </div>
+
+        <div class="teacher d-flex flex-row align-items-center">
+          <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
+          <div class="teacher-name col-8">
+            <h3 class="teacher-name">Yochai Benkler</h3>
+            <p class="teacher-position">Berkman professor of music</p>
+            <hr class="teacher-div">
+            <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
+          </div>
         </div>
       </div>
-  
-      <div class="teacher d-flex flex-row align-items-center">
-        <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
-        <div class="teacher-name col-8">
-          <h3 class="teacher-name">Yochai Benkler</h3>
-          <p class="teacher-position">Berkman professor of music</p>
-          <hr class="teacher-div">
-          <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
-        </div>
-      </div>
-  
-      <div class="teacher d-flex flex-row align-items-center">
-        <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
-        <div class="teacher-name col-8">
-          <h3 class="teacher-name">Yochai Benkler</h3>
-          <p class="teacher-position">Berkman professor of music</p>
-          <hr class="teacher-div">
-          <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
-        </div>
-      </div>
-  
-      <div class="teacher d-flex flex-row align-items-center">
-        <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
-        <div class="teacher-name col-8">
-          <h3 class="teacher-name">Yochai Benkler</h3>
-          <p class="teacher-position">Berkman professor of music</p>
-          <hr class="teacher-div">
-          <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
-        </div>
-      </div>
-  
-      <div class="teacher d-flex flex-row align-items-center">
-        <img class="teacher-img col-4" src="/Images/Teacher_1.png" alt="Teacher 1">
-        <div class="teacher-name col-8">
-          <h3 class="teacher-name">Yochai Benkler</h3>
-          <p class="teacher-position">Berkman professor of music</p>
-          <hr class="teacher-div">
-          <p class="teacher-description">Lorem ipsum dolor sit amet consectetur adipisicing elit de la paz catdur.</p>
-        </div>
-      </div>
-  
-  
-    </div>
-  </section>
-  
+
+    </section>
   <!---- Featured teachers grid ends ---->
+
+   <!-- Here starts sponsors section -->
   
-  <!-- Here starts sponsors section -->
+    <section id="sponsors-home" class="sponsors align-items-center">
+    
+      <h2 class="sponsors-title">Sponsors</h2>
+      <hr class="divisor">
+      <div class="sponsors-container">
+        <img class="sponsor-img" src="Images/sponsor_1.png" alt="">
+        <img class="sponsor-img" src="Images/sponsor_2.png" alt="">
+        <img class="sponsor-img" src="Images/sponsor_3.png" alt="">
+        <img class="sponsor-img" src="Images/sponsor_4.png" alt="">
+      </div>
   
-  <section class="sponsors d-flex flex-column align-items-center">
-  
-    <h2 class="sponsors-title">Sponsors</h2>
-    <hr class="divisor">
-    <img class="sponsor-img" src="Images/sponsor_1.png" alt="">
-    <img class="sponsor-img" src="Images/sponsor_2.png" alt="">
-    <img class="sponsor-img" src="Images/sponsor_3.png" alt="">
-    <img class="sponsor-img" src="Images/sponsor_4.png" alt="">
-  
-  </section>
-  
+    </section>
+
+  <!-- Here start the footer section -->
+
+    <footer class="d-flex justify-content-center align-items-center">
+      <img id="creative-commons-logo" src="Images/cc-logo2.png" alt="">
+      <div class="license">
+        <p> 2015 Design of Creative Commons Korea. <br> Some rights reserved </p>
+      </div>
+    </footer>
+
   </body>
 </html>
