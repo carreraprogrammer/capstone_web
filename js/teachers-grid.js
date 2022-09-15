@@ -42,7 +42,7 @@ const teachersData = [
     position: 'Sound Designer/Editor',
     description: 'Eugene Gearty 82 is an Oscar and Emmy-winning film sound designer and editor whose lengthy list of credits include Life of Pi, Eternal Sunshine of the Spotless Mind.',
     image: 'teacher_6.png',
-  }, 
+  },
 ];
 
 const teacherInformation = teachersData.map((teacher) => `
