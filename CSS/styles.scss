@@ -46,12 +46,10 @@ body {
 /********** This is the mobile section until 768px *********************/
 
 nav {
-
   height: 66px;
   align-items: center;
 
   .nav-navigation-mobile {
-
     display: block;
     position: fixed;
     top: 0;
@@ -79,15 +77,18 @@ nav {
         color: black;
       }
     }
+
     #nav-logo {
       border-bottom: none;
       position: fixed;
       top: 50px;
       height: auto;
-      img{
+
+      img {
         width: 150px;
         transition: transform 0.5s ease-in-out;
       }
+
       img:hover {
         transform: scale(1.1);
       }
@@ -117,7 +118,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 19px;
-    z-index: 1; 
+    z-index: 1;
 
     .burger-bar {
       height: 5px;
@@ -130,11 +131,11 @@ nav {
   .burger-menu.is-active .burger-bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .burger-menu.is-active .burger-bar:nth-child(1) {
     transform: translateY(7.5px) rotate(45deg);
   }
-  
+
   .burger-menu.is-active .burger-bar:nth-child(3) {
     transform: translateY(-7.5px) rotate(-45deg);
   }
@@ -144,14 +145,17 @@ nav {
 
 header {
   height: 55vh;
-  background-image: url(/Images/mobile-header.png);
+  background-image: url(../Images/mobile-header.png);
   background-position-x: center;
   text-align: left;
 
-  #header-title, #header-subtitle, #header-description {
+  #header-title,
+  #header-subtitle,
+  #header-description {
     margin-left: 19px;
     margin-right: 19px;
   }
+
   #header-title {
     font-family: 'Lato', sans-serif;
     color: $orange;
@@ -159,12 +163,13 @@ header {
     font-weight: 900 !important;
     font-size: 2rem;
   }
+
   #header-subtitle {
     font-size: 1.5rem;
     border: 5px solid transparent;
     color: $orange;
-
   }
+
   #header-description-container {
     border: 5px solid $white;
     width: 90%;
@@ -175,6 +180,7 @@ header {
     border: none;
     text-align: center;
     margin-top: 24px;
+
     #location-date {
       font-weight: 700;
       color: $black;
@@ -199,7 +205,7 @@ main {
     @include divisor;
   }
 
-  .activities-grid{
+  .activities-grid {
     width: 100%;
     margin-top: 10%;
     flex-direction: column;
@@ -212,11 +218,22 @@ main {
     text-align: center;
     align-items: center;
     margin-top: 5%;
-    #activity-title {
-      color: $orange; 
+
+    #activity-img {
+      flex-basis: 20%;
+      margin-left: 4px;
     }
+
+    #activity-title {
+      color: $orange;
+      flex-basis: 30%;
+      margin-left: 3px;
+    }
+
     #activity-description {
-      margin: 0;
+      flex-basis: 50%;
+      margin-left: 3px;
+      width: 50%;
     }
   }
 }
@@ -231,13 +248,15 @@ main {
   margin-bottom: 20%;
 }
 
-/********* Here start featured teachers section ***********/ 
+/********* Here start featured teachers section ***********/
 
 .featured-teachers {
+
   #featured-title {
-    @include section-title; 
+    @include section-title;
     color: $black;
   }
+
   .divisor {
     @include divisor;
   }
@@ -250,28 +269,33 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+
   .teacher-img {
     width: 120px;
     height: 120px;
     margin-right: 24px;
   }
+
   .teacher-name {
     font-size: 15px;
     margin: 0;
     font-weight: bold;
   }
+
   .teacher-position {
     font-size: 15px;
     margin: 0;
     color: $orange;
     margin-top: 5px;
   }
+
   .teacher-description {
     font-size: 15px;
     margin: 0;
     margin-top: 5px;
     font-weight: normal;
   }
+
   .teacher-div {
     width: 50px;
     margin: 0;
@@ -295,31 +319,32 @@ footer {
   height: 20vh;
   border-top: 2px solid $white;
   background-color: $white;
+
   #creative-commons-logo {
     width: 30%;
     height: auto;
     margin-right: 24px;
     margin-left: 24px;
   }
+
   p {
     margin-right: 24px;
   }
 }
+
 /**************** Here start desktop version ***********************/
 
-@media screen and (min-width: 768px)  {
-
+@media screen and (min-width: 768px) {
   nav {
-
     height: 66px;
     justify-content: left;
     align-items: center;
     border-bottom: 2px solid $white;
 
-    .nav-navigation-mobile{
+    .nav-navigation-mobile {
       display: none;
     }
-  
+
     .nav-navigation {
       margin-left: 30%;
       margin-right: 1%;
@@ -329,15 +354,16 @@ footer {
       margin-top: 20px;
       align-items: center;
       justify-content: center;
-      a{
+
+      a {
         text-decoration: none;
         color: $black;
         margin-left: 12px;
         margin-right: 12px;
       }
-      
+
       a:hover {
-        text-decoration:underline;
+        text-decoration: underline;
         text-decoration-color: $orange;
       }
 
@@ -345,63 +371,72 @@ footer {
         color: $orange;
       }
     }
-  
+
     .logo-link {
       height: 66px;
       width: 70px;
       align-items: center;
       display: flex;
       margin-left: 15%;
+
       .logo-img {
         height: 50px;
         width: auto;
         transition: transform 0.5s ease-in-out;
       }
-      
+
       .logo-img:hover {
         transform: scale(1.1);
       }
     }
+
     .campaign {
       display: block;
-      margin-right: 24px;
       margin-top: 0;
       height: 50px;
       width: 140px;
       border: 5px solid $orange;
       margin-right: 15%;
     }
+
     .burger-menu {
       display: none;
     }
-  } 
+  }
 
   /************ Here start header ******************/
 
   header {
     height: 100vh;
-    background-image: url(/Images/header-background.png);
+    background-image: url(../Images/header-background.png);
     text-align: left;
-  
-    #header-title, #header-subtitle, #header-description {
+
+    #header-title,
+    #header-subtitle,
+    #header-description {
       margin-left: 15%;
     }
+
     #header-title {
       font-size: 5rem;
     }
+
     #header-subtitle {
       font-size: 2rem;
     }
+
     #header-description-container {
       width: 45%;
       margin-left: 15%;
       background-color: white;
+
       #header-description {
         font-size: 1rem;
         margin-left: 15px;
         margin-top: 15px;
       }
     }
+
     #location {
       border: none;
       width: 40%;
@@ -410,6 +445,7 @@ footer {
       margin-top: 24px;
     }
   }
+
   /* Here start main section */
 
   main {
@@ -419,14 +455,14 @@ footer {
       padding: 0;
       margin-top: 50px;
     }
-  
-    .activities-grid{
+
+    .activities-grid {
       margin-top: 2rem;
       flex-direction: row;
       gap: 3px;
       justify-content: center;
     }
-  
+
     .activity {
       height: 200px;
       width: 15%;
@@ -434,11 +470,20 @@ footer {
       align-items: center;
       flex-direction: column;
       margin-top: 0;
+      justify-content: center;
+
       #activity-title {
-        color: $orange; 
+        color: $orange;
+        flex-basis: 0;
       }
+
       #activity-description {
-        margin: 0;
+        flex-basis: 0;
+        width: 90%;
+      }
+
+      #activity-image {
+        flex-basis: 0;
       }
     }
   }
@@ -450,9 +495,9 @@ footer {
     background-color: transparent;
     text-decoration: underline;
   }
-    
-    /********* Here start featured teachers section ***********/ 
-  
+
+  /********* Here start featured teachers section ***********/
+
   .featured-teachers {
     #featured-title {
       @include section-title; 
@@ -460,48 +505,56 @@ footer {
       padding: 0;
       margin-top: 50px;
     }
+
     .divisor {
       @include divisor;
     }
-    .teacher{
+
+    .teacher {
       margin-left: 24px;
       margin-right: 24px;
     }
   }
-  
+
   .teachers-grid {
     width: 80%;
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: 1fr 1fr;
-   .teacher-img {
-    width: 200px;
-    height: 200px;
-   }
+
+    .teacher-img {
+      width: 200px;
+      height: 200px;
+    }
   }
 
 /***************** Here start sponsors section *********************/
+
   #sponsors-home {
     display: flex;
     height: auto;
     flex-direction: column;
+
     .sponsors-title {
       @include section-title;
       padding: 0;
       margin-top: 50px;
     }
+
     .divisor {
       @include divisor;
     }
+
     .sponsors-container {
       margin-bottom: 50px;
+
       .sponsor-img {
         margin-left: 25px;
         margin-right: 25px;
       }
     }
   }
-  
+
   footer {
     background-color: white;
   }

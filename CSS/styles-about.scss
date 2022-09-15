@@ -50,13 +50,10 @@ body {
 
 /********** This is the mobile section until 768px *********************/
 nav {
-
   height: 66px;
   align-items: center;
 
   .nav-navigation-mobile {
-
-    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -83,15 +80,16 @@ nav {
         color: black;
       }
     }
+
     #nav-logo {
       border-bottom: none;
       position: fixed;
       top: 50px;
       height: auto;
-      img{
+
+      img {
         width: 150px;
       }
-    
     }
   }
 
@@ -118,7 +116,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 10%;
-    z-index: 1; 
+    z-index: 1;
 
     .burger-bar {
       height: 5px;
@@ -131,40 +129,43 @@ nav {
   .burger-menu.is-active .burger-bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .burger-menu.is-active .burger-bar:nth-child(1) {
     transform: translateY(7.5px) rotate(45deg);
   }
-  
+
   .burger-menu.is-active .burger-bar:nth-child(3) {
     transform: translateY(-7.5px) rotate(-45deg);
   }
 }
 
-
 /************ Here start header ******************/
 
 header {
-    height: 55vh;
-    background-image: url(/Images/about_bg_01.png);
-    background-position-x: left;
-    text-align: center;
-    align-items: center;
-    #header-subtitle {
-      color: $orange;
-    }
-    #header-title {
-      color: $orange;
-      font-weight: 900;
-    }
-    #header-description {
-      @include section-description($black);
-      border: 1px solid $white;
-      background-color: white;
-    }
-    .header-contact {
-      width: 80%;
-    }
+  height: 55vh;
+  background-image: url(../Images/about_bg_01.png);
+  background-position-x: left;
+  text-align: center;
+  align-items: center;
+
+  #header-subtitle {
+    color: $orange;
+  }
+
+  #header-title {
+    color: $orange;
+    font-weight: 900;
+  }
+
+  #header-description {
+    @include section-description($black);
+    border: 1px solid $white;
+    background-color: white;
+  }
+
+  .header-contact {
+    width: 80%;
+  }
 }
 
 /************ Here start logo section ****************/
@@ -173,26 +174,31 @@ header {
   height: auto;
   border-top: 2px solid $white;
   border-bottom: 2px solid $white;
+
   .logo-title {
     @include section-title;
     color: $black;
     width: 70%;
-    }
-    .divisor {
+  }
+
+  .divisor {
     @include divisor;
-    }
+  }
+
   .logo-container {
     width: 80%;
     background-color: white;
     border: 1px solid $white;
     margin-top: 24px;
     margin-bottom: 20%;
+
     .logo-section-img {
       width: 90%;
     }
   }
+
   .logo-description {
-    @include section-description($black)
+    @include section-description($black);
   }
 }
 
@@ -200,32 +206,37 @@ header {
 
 .past-camps-section {
   height: auto;
+
   .past-camps-title {
     @include section-title;
     color: $black;
     width: 90%;
   }
-  .divisor{
+
+  .divisor {
     @include divisor;
   }
+
   .past-camps-description {
     @include section-description($black);
   }
+
   .examples-past-camps {
     width: 90%;
     margin-bottom: 20%;
     cursor: pointer;
-    
+
     .camp-2015 {
-      background: url(/Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
+      background: url(../Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
       background-blend-mode: multiply;
       background-size: cover;
       width: 100%;
       height: 250px;
       transition: transform 0.5s ease;
     }
+
     .camp-2018 {
-      background: url(/Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
+      background: url(../Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
       background-size: cover;
       background-blend-mode: multiply;
       height: 250px;
@@ -234,17 +245,14 @@ header {
       transition: 0.5s ease;
     }
   }
-  
+
   .camp-2018:hover {
     transform: scale(1.1);
-    background-color: transparent;
   }
 
   .camp-2015:hover {
     transform: scale(1.1);
-    background-color: transparent;
   }
-  
 }
 
 .past-camp-date {
@@ -259,33 +267,37 @@ header {
   color: $white;
 }
 
-/********* Here starts sponsor section ***********/ 
+/********* Here starts sponsor section ***********/
 
 .sponsors {
-    height: auto;
-    background-color: $black;
+  height: auto;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sponsors-title {
+    @include section-title;
+  }
+
+  .divisor {
+    @include divisor;
+    width: 50px;
+  }
+
+  .sponsors-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .sponsors-title {
-      @include section-title;
-    }
-    .divisor {
-      @include divisor;
-      width: 50px;
-    }
-    .sponsors-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-    .sponsor-img {
-      max-width: 80%;
-      height: auto;
-      margin-top: 40px;
-    }
+    margin-bottom: 50px;
   }
+
+  .sponsor-img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 40px;
+  }
+}
 
 /**************** Here start footer section ***********************/
 
@@ -293,27 +305,29 @@ footer {
   height: 30vh;
   background-color: $black;
   color: $white;
+
   #creative-commons-logo {
     width: 30%;
     height: auto;
     margin-right: 50px;
     margin-left: 24px;
   }
+
   p {
     margin-right: 24px;
   }
 }
+
 /**************** Here start desktop version ***********************/
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
 
   nav {
-
     height: 66px;
     justify-content: left;
     align-items: center;
     border-bottom: 2px solid $white;
-    
+
     .nav-navigation-mobile {
       display: none;
     }
@@ -328,7 +342,7 @@ footer {
       align-items: center;
       justify-content: center;
 
-      a{
+      a {
         text-decoration: none;
         color: $black;
         margin-left: 12px;
@@ -336,7 +350,7 @@ footer {
       }
 
       a:hover {
-        text-decoration:underline;
+        text-decoration: underline;
         text-decoration-color: $orange;
       }
 
@@ -349,55 +363,59 @@ footer {
         font-weight: 700;
       }
     }
-  
+
     .logo-link {
       height: 66px;
       width: 70px;
       align-items: center;
       display: flex;
       margin-left: 15%;
+
       .logo-img {
         height: 50px;
         width: auto;
         transition: transform 0.5s ease-in-out;
       }
-      
+
       .logo-img:hover {
         transform: scale(1.1);
       }
     }
+
     .campaign {
       display: block;
-      margin-right: 24px;
       margin-top: 0;
       height: 50px;
       width: 140px;
       border: 5px solid $orange;
       margin-right: 15%;
     }
+
     .burger-menu {
       display: none;
     }
-  } 
+  }
 
   /************ Here start header ******************/
 
   header {
     height: 100vh;
-    background-image: url(/Images/about_bg_01.png);
+    background-image: url(../Images/about_bg_01.png);
     background-color: #d3d3d392;
     background-blend-mode: multiply;
-
     background-position-x: left;
     text-align: center;
     align-items: center;
+
     #header-subtitle {
       color: $orange;
       font-size: 2rem;
     }
+
     #header-title {
       font-size: 4rem;
     }
+
     #header-description {
       @include section-description($black);
       border: 4px solid $white;
@@ -415,19 +433,23 @@ footer {
     height: auto;
     border-top: 2px solid $white;
     border-bottom: 2px solid $white;
+
     .logo-title {
       @include section-title;
       color: $black;
       padding: 0;
       margin-top: 50px;
-      }
-      .divisor {
+    }
+
+    .divisor {
       @include divisor;
       margin-top: 24px;
-      }
-      .logo-description {
-        width: 50%;
-      }
+    }
+
+    .logo-description {
+      width: 50%;
+    }
+
     .logo-container {
       width: 25%;
       margin-bottom: 50px;
@@ -438,20 +460,24 @@ footer {
 
   .past-camps-section {
     height: auto;
+
     .past-camps-title {
       @include section-title;
       padding: 0;
       margin-top: 50px;
       color: $black;
     }
-    .divisor{
+
+    .divisor {
       @include divisor;
       margin-top: 24px;
     }
+
     .past-camps-description {
       @include section-description($black);
       width: 30%;
     }
+
     .examples-past-camps {
       width: 60%;
       margin-bottom: 10%;
@@ -459,6 +485,7 @@ footer {
       grid-template-columns: 1fr 1fr;
       margin-top: 50px;
       gap: 24px;
+
       .camp-2018 {
         margin-top: 0;
       }
@@ -487,5 +514,3 @@ footer {
     }
   }
 }
-
-

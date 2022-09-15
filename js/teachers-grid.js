@@ -3,7 +3,7 @@ const teachersData = [
     id: 1,
     name: "Nathan Gill",
     position: "Berklee College of Music professor ",
-    description: "A board certified-music therapist, is the founder of Bay Area Music Therapy(Opens in a new window), an organization offering individualized music therapy programs and wellness services throughout the San Francisco Bay area",
+    description: "A board certified-music therapist, is the founder of Bay Area Music Therapy(Opens in a new window), an organization offering individualized music therapy programs.",
     image: "teacher_1.png",
   },
 
@@ -11,14 +11,14 @@ const teachersData = [
     id: 2,
     name: "Yochai Benkler",
     position: "CEO; Cofounder of BFM Jazz Records",
-    description: "When we caught wind that Steve Corn’s record label, BFM Jazz, had three releases that were nominated for five Grammys this year, we had to get the story of this jazz record label that has somehow not only survived into the digital age but flourished in the pop age, and the Berklee alumnus behind it.",
+    description: "When we caught wind that Steve Corn’s record label, BFM Jazz, had three releases that were nominated for five Grammys this year.",
     image: "teacher_2.png",
   },
   {
     id: 3,
     name: "Will Calhoun",
     position: "Julliard Alumni",
-    description: "After graduating with honors from Julliard, Will Calhoun '86 went on to chart-topping success with rock band Living Colour and has played with jazz icons as well as African village masters in his lifelong exploration of the ancient art of drumming.",
+    description: "After graduating with honors from Julliard, Will Calhoun '86 went on to chart-topping success with rock band Living Colour and has played with jazz icons.",
     image: "teacher_3.png",
   },
   {
@@ -39,7 +39,7 @@ const teachersData = [
     id: 6,
     name: "Eugene Gearty",
     position: "Sound Designer/Editor",
-    description: "Eugene Gearty '82 is an Oscar and Emmy-winning film sound designer and editor (Hugo, Boardwalk Empire) whose lengthy list of credits include Life of Pi, Eternal Sunshine of the Spotless Mind, Do The Right Thing, O Brother, Where Art Thou?, and the Brian Wilson biopic Love & Mercy.",
+    description: "Eugene Gearty '82 is an Oscar and Emmy-winning film sound designer and editor whose lengthy list of credits include Life of Pi, Eternal Sunshine of the Spotless Mind.",
     image: "teacher_6.png",
   }, 
 ];
@@ -47,7 +47,7 @@ const teachersData = [
 
 const teacherInformation = teachersData.map((teacher) => `
   <div class="teacher d-flex flex-row align-items-center">
-  <img class="teacher-img col-4" src="/Images/${teacher.image}" alt="Teacher ${teacher.id}">
+  <img class="teacher-img col-4" src="./Images/${teacher.image}" alt="Teacher ${teacher.id}">
   <div class="teacher-name col-8">
     <h3 class="teacher-name">${teacher.name}</h3>
     <p class="teacher-position">${teacher.position}</p>

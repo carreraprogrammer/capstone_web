@@ -25,7 +25,6 @@ nav {
   align-items: center;
 }
 nav .nav-navigation-mobile {
-  display: block;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -100,7 +99,7 @@ nav .burger-menu.is-active .burger-bar:nth-child(3) {
 /************ Here start header ******************/
 header {
   height: 55vh;
-  background-image: url(/Images/about_bg_01.png);
+  background-image: url(../Images/about_bg_01.png);
   background-position-x: left;
   text-align: center;
   align-items: center;
@@ -191,7 +190,7 @@ header .header-contact {
   cursor: pointer;
 }
 .past-camps-section .examples-past-camps .camp-2015 {
-  background: url(/Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
+  background: url(../Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
   background-blend-mode: multiply;
   background-size: cover;
   width: 100%;
@@ -199,7 +198,7 @@ header .header-contact {
   transition: transform 0.5s ease;
 }
 .past-camps-section .examples-past-camps .camp-2018 {
-  background: url(/Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
+  background: url(../Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
   background-size: cover;
   background-blend-mode: multiply;
   height: 250px;
@@ -209,11 +208,9 @@ header .header-contact {
 }
 .past-camps-section .camp-2018:hover {
   transform: scale(1.1);
-  background-color: transparent;
 }
 .past-camps-section .camp-2015:hover {
   transform: scale(1.1);
-  background-color: transparent;
 }
 
 .past-camp-date {
@@ -333,7 +330,6 @@ footer p {
   }
   nav .campaign {
     display: block;
-    margin-right: 24px;
     margin-top: 0;
     height: 50px;
     width: 140px;
@@ -346,7 +342,7 @@ footer p {
   /************ Here start header ******************/
   header {
     height: 100vh;
-    background-image: url(/Images/about_bg_01.png);
+    background-image: url(../Images/about_bg_01.png);
     background-color: rgba(211, 211, 211, 0.5725490196);
     background-blend-mode: multiply;
     background-position-x: left;

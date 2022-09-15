@@ -105,11 +105,13 @@ nav .burger-menu.is-active .burger-bar:nth-child(3) {
 /************ Here start header ******************/
 header {
   height: 55vh;
-  background-image: url(/Images/mobile-header.png);
+  background-image: url(../Images/mobile-header.png);
   background-position-x: center;
   text-align: left;
 }
-header #header-title, header #header-subtitle, header #header-description {
+header #header-title,
+header #header-subtitle,
+header #header-description {
   margin-left: 19px;
   margin-right: 19px;
 }
@@ -174,11 +176,19 @@ main .activity {
   align-items: center;
   margin-top: 5%;
 }
+main .activity #activity-img {
+  flex-basis: 20%;
+  margin-left: 4px;
+}
 main .activity #activity-title {
   color: #ec5242;
+  flex-basis: 30%;
+  margin-left: 3px;
 }
 main .activity #activity-description {
-  margin: 0;
+  flex-basis: 50%;
+  margin-left: 3px;
+  width: 50%;
 }
 
 #join-btn {
@@ -320,7 +330,6 @@ footer p {
   }
   nav .campaign {
     display: block;
-    margin-right: 24px;
     margin-top: 0;
     height: 50px;
     width: 140px;
@@ -333,10 +342,12 @@ footer p {
   /************ Here start header ******************/
   header {
     height: 100vh;
-    background-image: url(/Images/header-background.png);
+    background-image: url(../Images/header-background.png);
     text-align: left;
   }
-  header #header-title, header #header-subtitle, header #header-description {
+  header #header-title,
+header #header-subtitle,
+header #header-description {
     margin-left: 15%;
   }
   header #header-title {
@@ -383,12 +394,18 @@ footer p {
     align-items: center;
     flex-direction: column;
     margin-top: 0;
+    justify-content: center;
   }
   main .activity #activity-title {
     color: #ec5242;
+    flex-basis: 0;
   }
   main .activity #activity-description {
-    margin: 0;
+    flex-basis: 0;
+    width: 90%;
+  }
+  main .activity #activity-image {
+    flex-basis: 0;
   }
   #join-btn {
     color: #d3d3d3;
