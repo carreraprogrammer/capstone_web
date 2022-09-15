@@ -1,2 +1,5 @@
 node_modules
-*.sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
