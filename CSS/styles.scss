@@ -50,7 +50,6 @@ nav {
   align-items: center;
 
   .nav-navigation-mobile {
-    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -500,7 +499,7 @@ footer {
 
   .featured-teachers {
     #featured-title {
-      @include section-title; 
+      @include section-title;
       color: $black;
       padding: 0;
       margin-top: 50px;
@@ -528,7 +527,7 @@ footer {
     }
   }
 
-/***************** Here start sponsors section *********************/
+  /***************** Here start sponsors section *********************/
 
   #sponsors-home {
     display: flex;
