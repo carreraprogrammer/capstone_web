@@ -1,12 +1,9 @@
 ![]()
 ​
 
-# Portfolio: Capstone Web
+# Portfolio: Fire Music Camp
 
-> In this project
-
-- I set up a new repository and prepare it for development using best practices (e.g. linters).
-- Build the first 2 sections of the mobile website.
+> In this project,  I created a web page for a Music Camp.
   ​
   ​
 
@@ -20,7 +17,7 @@
 ## Live Demo (if available)
 
 [Live Demo Link](https://carreraprogrammer.github.io/carrera_portfolio/)
-​
+​[Loom presentation of page](https://www.loom.com/share/62f2164023f542f49c11d6caf2b53a77)
 
 ## Getting Started
 
