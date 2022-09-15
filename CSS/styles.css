@@ -60,6 +60,10 @@ nav .nav-navigation-mobile #nav-logo {
 }
 nav .nav-navigation-mobile #nav-logo img {
   width: 150px;
+  transition: transform 0.5s ease-in-out;
+}
+nav .nav-navigation-mobile #nav-logo img:hover {
+  transform: scale(1.1);
 }
 nav .nav-navigation-mobile.is-active {
   transform: translateX(0);
@@ -309,6 +313,10 @@ footer p {
   nav .logo-link .logo-img {
     height: 50px;
     width: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  nav .logo-link .logo-img:hover {
+    transform: scale(1.1);
   }
   nav .campaign {
     display: block;

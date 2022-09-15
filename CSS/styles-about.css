@@ -326,6 +326,10 @@ footer p {
   nav .logo-link .logo-img {
     height: 50px;
     width: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  nav .logo-link .logo-img:hover {
+    transform: scale(1.1);
   }
   nav .campaign {
     display: block;

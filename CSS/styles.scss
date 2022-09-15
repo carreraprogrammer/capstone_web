@@ -86,6 +86,10 @@ nav {
       height: auto;
       img{
         width: 150px;
+        transition: transform 0.5s ease-in-out;
+      }
+      img:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -351,6 +355,11 @@ footer {
       .logo-img {
         height: 50px;
         width: auto;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .logo-img:hover {
+        transform: scale(1.1);
       }
     }
     .campaign {
