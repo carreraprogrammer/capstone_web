@@ -1,0 +1,454 @@
+/* Variables */
+/* mixins */
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* li {
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/********** This is the mobile section until 768px *********************/
+nav {
+  height: 66px;
+  align-items: center;
+}
+nav .nav-navigation-mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.9450980392);
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+nav .nav-navigation-mobile li {
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ec5242;
+}
+nav .nav-navigation-mobile li a {
+  text-decoration: none;
+  color: black;
+}
+nav .nav-navigation-mobile #nav-logo {
+  border-bottom: none;
+  position: fixed;
+  top: 1%;
+  height: auto;
+}
+nav .nav-navigation-mobile #nav-logo img {
+  width: 150px;
+}
+nav .nav-navigation-mobile.is-active {
+  transform: translateX(0);
+}
+nav .nav-navigation {
+  display: none;
+}
+nav .logo-link {
+  display: none;
+}
+nav .campaign {
+  display: none;
+}
+nav .burger-menu {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10%;
+  z-index: 1;
+}
+nav .burger-menu .burger-bar {
+  height: 5px;
+  width: 20px;
+  background-color: #272a31;
+  transition: transform 1s ease-in-out;
+}
+nav .burger-menu.is-active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+nav .burger-menu.is-active .burger-bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+nav .burger-menu.is-active .burger-bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/************ Here start header ******************/
+header {
+  height: 55vh;
+  background-image: url(../Images/about_bg_01.png);
+  background-position-x: left;
+  text-align: center;
+  align-items: center;
+}
+header #header-subtitle {
+  color: #ec5242;
+}
+header #header-title {
+  color: #ec5242;
+  font-weight: 900;
+}
+header #header-description {
+  font-size: 15px;
+  color: #272a31;
+  margin-top: 24px;
+  width: 90%;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+}
+header .header-contact {
+  width: 80%;
+}
+
+/************ Here start logo section ****************/
+.logo-section {
+  height: auto;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+.logo-section .logo-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 20%;
+  text-align: center;
+  color: #272a31;
+  width: 70%;
+}
+.logo-section .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 50px;
+  opacity: 1;
+}
+.logo-section .logo-container {
+  width: 80%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  margin-top: 24px;
+  margin-bottom: 20%;
+}
+.logo-section .logo-container .logo-section-img {
+  width: 90%;
+}
+.logo-section .logo-description {
+  font-size: 15px;
+  color: #272a31;
+  margin-top: 24px;
+  width: 90%;
+}
+
+/************ Here start past camp section ****************/
+.past-camps-section {
+  height: auto;
+}
+.past-camps-section .past-camps-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 20%;
+  text-align: center;
+  color: #272a31;
+  width: 90%;
+}
+.past-camps-section .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 50px;
+  opacity: 1;
+}
+.past-camps-section .past-camps-description {
+  font-size: 15px;
+  color: #272a31;
+  margin-top: 24px;
+  width: 90%;
+}
+.past-camps-section .examples-past-camps {
+  width: 90%;
+  margin-bottom: 20%;
+  cursor: pointer;
+}
+.past-camps-section .examples-past-camps .camp-2015 {
+  background: url(../Images/pexels-photo-3776838.jpeg) no-repeat 0, 0 #ec5242;
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  transition: transform 0.5s ease;
+}
+.past-camps-section .examples-past-camps .camp-2018 {
+  background: url(../Images/pexels-vishnu-r-nair-1105666.jpg) no-repeat 0, 0 #ec5242;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 250px;
+  margin-top: 24px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.past-camps-section .camp-2018:hover {
+  transform: scale(1.1);
+}
+.past-camps-section .camp-2015:hover {
+  transform: scale(1.1);
+}
+
+.past-camp-date {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d3d3d3;
+}
+
+.past-camp-location {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #d3d3d3;
+}
+
+/********* Here starts sponsor section ***********/
+.sponsors {
+  height: auto;
+  background-color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsors .sponsors-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 20%;
+  text-align: center;
+}
+.sponsors .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 50px;
+  opacity: 1;
+  width: 50px;
+}
+.sponsors .sponsors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.sponsors .sponsor-img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 40px;
+}
+
+/**************** Here start footer section ***********************/
+footer {
+  height: 30vh;
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+footer #creative-commons-logo {
+  width: 30%;
+  height: auto;
+  margin-right: 50px;
+  margin-left: 24px;
+}
+footer p {
+  margin-right: 24px;
+}
+
+/**************** Here start desktop version ***********************/
+@media screen and (min-width: 768px) {
+  nav {
+    height: 66px;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 2px solid #d3d3d3;
+  }
+  nav .nav-navigation-mobile {
+    display: none;
+  }
+  nav .nav-navigation {
+    margin-left: 30%;
+    margin-right: 1%;
+    display: flex;
+    flex-basis: 30%;
+    height: 30px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .nav-navigation a {
+    text-decoration: none;
+    color: #272a31;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  nav .nav-navigation a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #ec5242;
+            text-decoration-color: #ec5242;
+  }
+  nav .nav-navigation a:active {
+    color: #ec5242;
+  }
+  nav .nav-navigation .actual-page {
+    color: #ec5242;
+    font-weight: 700;
+  }
+  nav .logo-link {
+    height: 66px;
+    width: 70px;
+    align-items: center;
+    display: flex;
+    margin-left: 15%;
+  }
+  nav .logo-link .logo-img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  nav .logo-link .logo-img:hover {
+    transform: scale(1.1);
+  }
+  nav .campaign {
+    display: block;
+    margin-top: 0;
+    height: 50px;
+    width: 140px;
+    border: 5px solid #ec5242;
+    margin-right: 15%;
+  }
+  nav .burger-menu {
+    display: none;
+  }
+  /************ Here start header ******************/
+  header {
+    height: 100vh;
+    background-image: url(../Images/about_bg_01.png);
+    background-color: rgba(211, 211, 211, 0.5725490196);
+    background-blend-mode: multiply;
+    background-position-x: left;
+    text-align: center;
+    align-items: center;
+  }
+  header #header-subtitle {
+    color: #ec5242;
+    font-size: 2rem;
+  }
+  header #header-title {
+    font-size: 4rem;
+  }
+  header #header-description {
+    font-size: 15px;
+    color: #272a31;
+    margin-top: 24px;
+    width: 90%;
+    border: 4px solid #d3d3d3;
+    background-color: white;
+    width: 60%;
+    height: 20%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  /************ Here start logo section ****************/
+  .logo-section {
+    height: auto;
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;
+  }
+  .logo-section .logo-title {
+    color: #d3d3d3;
+    font-weight: bold;
+    padding-top: 20%;
+    text-align: center;
+    color: #272a31;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .logo-section .divisor {
+    border: 1px solid #ec5242;
+    background-color: #ec5242;
+    width: 50px;
+    opacity: 1;
+    margin-top: 24px;
+  }
+  .logo-section .logo-description {
+    width: 50%;
+  }
+  .logo-section .logo-container {
+    width: 25%;
+    margin-bottom: 50px;
+  }
+  /************ Here start past camp section ****************/
+  .past-camps-section {
+    height: auto;
+  }
+  .past-camps-section .past-camps-title {
+    color: #d3d3d3;
+    font-weight: bold;
+    padding-top: 20%;
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+    color: #272a31;
+  }
+  .past-camps-section .divisor {
+    border: 1px solid #ec5242;
+    background-color: #ec5242;
+    width: 50px;
+    opacity: 1;
+    margin-top: 24px;
+  }
+  .past-camps-section .past-camps-description {
+    font-size: 15px;
+    color: #272a31;
+    margin-top: 24px;
+    width: 90%;
+    width: 30%;
+  }
+  .past-camps-section .examples-past-camps {
+    width: 60%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 24px;
+  }
+  .past-camps-section .examples-past-camps .camp-2018 {
+    margin-top: 0;
+  }
+  .past-camp-date {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d3d3d3;
+  }
+  .past-camp-location {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #d3d3d3;
+  }
+  #sponsors-about {
+    display: none;
+  }
+  footer #creative-commons-logo {
+    width: 10%;
+  }
+}/*# sourceMappingURL=styles-about.css.map */

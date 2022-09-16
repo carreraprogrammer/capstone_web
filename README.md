@@ -1,27 +1,23 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![]()
 ​
 
-# Portfolio: Setup and movile first
+# Portfolio: Fire Music Camp
 
-> iin this project I:
-
-- I set up a new repository and prepare it for development using best practices (e.g. linters).
-- Build the first 2 sections of the mobile website.
+> In this project,  I created a web page for a Music Camp.
   ​
   ​
 
 ## Built With
 
-​
-
-- Major languages: Html&css
+- Major languages: Html, scss, javascript
+- Libraries: bootstrap
 - Frameworks: Visual studio
 - Technologies used
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://carreraprogrammer.github.io/carrera_portfolio/)
-​
+- [Live Demo Link](https://carreraprogrammer.github.io/capstone_web/)
+- ​[Loom presentation of page](https://www.loom.com/share/62f2164023f542f49c11d6caf2b53a77)
 
 ## Getting Started
 
@@ -57,47 +53,22 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@carreraprogrammer](https://twitter.com/carreraprog)
 - LinkedIn: [Daniel Carrera] (https://www.linkedin.com/in/daniel-carrera-paz-85a917244/)
 
-👤 **Ivan Martinez von Halle**
-
-- GitHub: [@ivanmvh](https://github.com/ivanmvh)
-- Twitter: [@imprivado](https://twitter.com/imprivado)
-
-👤 **Mahdi Aghaali**
-
-- GitHub: [@MahdiAghaali](https://github.com/MahdiAghaali)
-- Twitter: [@Mohi_Aghaali](https://twitter.com/Mohi_Aghaali)
-- LinkedIn: [mahdi-aghaali](https://www.linkedin.com/in/mahdi-aghaali/)
-  ​
-  ​👤 ** Osvaldo Jose Barrios Cortina **
-
-Twitter : @OsvaldoBarrio20
-GitHub : @OsvaldoBC
-LinkedIn: osvaldo-barrios-data-science
-
 ## �� Contributing
 
-​
 Contributions, issues, and feature requests are welcome!
 ​
 Feel free to check the [issues page](../../issues/).
 ​
-
 ## Show your support
 
-​
 Give a ⭐️ if you like this project!
 ​
-
 ## Acknowledgments
-
-​
 
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
   ​
-
 ## �� License
 
-​
 This project is [MIT](./MIT.md) licensed.
