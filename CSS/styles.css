@@ -103,7 +103,7 @@ nav .burger-menu.is-active .burger-bar:nth-child(3) {
 
 /************ Here start header ******************/
 header {
-  height: 55vh;
+  height: auto;
   background-image: url(../Images/mobile-header.png);
   background-position-x: center;
   text-align: left;
