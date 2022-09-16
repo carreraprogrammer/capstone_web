@@ -1,10 +1,10 @@
 const teachersData = [
   {
-    id: 1,
+    id: 7,
     name: 'Nathan Gill',
     position: 'Berklee College of Music professor ',
     description: 'A board certified-music therapist, is the founder of Bay Area Music Therapy(Opens in a new window), an organization offering individualized music therapy programs.',
-    image: 'teacher_1.png',
+    image: 'teacher_7.png',
   },
 
   {
