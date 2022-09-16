@@ -159,6 +159,7 @@ header {
 
   #header-description {
     @include section-description($black);
+
     border: 1px solid $white;
     background-color: white;
   }
@@ -177,6 +178,7 @@ header {
 
   .logo-title {
     @include section-title;
+
     color: $black;
     width: 70%;
   }
@@ -209,6 +211,7 @@ header {
 
   .past-camps-title {
     @include section-title;
+
     color: $black;
     width: 90%;
   }
@@ -282,6 +285,7 @@ header {
 
   .divisor {
     @include divisor;
+
     width: 50px;
   }
 
@@ -417,6 +421,7 @@ footer {
 
     #header-description {
       @include section-description($black);
+
       border: 4px solid $white;
       background-color: white;
       width: 60%;
@@ -435,6 +440,7 @@ footer {
 
     .logo-title {
       @include section-title;
+
       color: $black;
       padding: 0;
       margin-top: 50px;
@@ -442,6 +448,7 @@ footer {
 
     .divisor {
       @include divisor;
+
       margin-top: 24px;
     }
 
@@ -462,6 +469,7 @@ footer {
 
     .past-camps-title {
       @include section-title;
+
       padding: 0;
       margin-top: 50px;
       color: $black;
@@ -469,11 +477,13 @@ footer {
 
     .divisor {
       @include divisor;
+
       margin-top: 24px;
     }
 
     .past-camps-description {
       @include section-description($black);
+
       width: 30%;
     }
 
