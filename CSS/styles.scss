@@ -252,7 +252,6 @@ main {
 .featured-teachers {
   #featured-title {
     @include section-title;
-
     color: $black;
   }
 
@@ -500,7 +499,6 @@ footer {
   .featured-teachers {
     #featured-title {
       @include section-title;
-
       color: $black;
       padding: 0;
       margin-top: 50px;
@@ -537,7 +535,6 @@ footer {
 
     .sponsors-title {
       @include section-title;
-
       padding: 0;
       margin-top: 50px;
     }
