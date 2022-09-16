@@ -16,7 +16,7 @@
 
 ## Live Demo (if available)
 
-- [Live Demo Link](https://carreraprogrammer.github.io/carrera_portfolio/)
+- [Live Demo Link](https://carreraprogrammer.github.io/capstone_web/)
 - ​[Loom presentation of page](https://www.loom.com/share/62f2164023f542f49c11d6caf2b53a77)
 
 ## Getting Started
