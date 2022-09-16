@@ -54,7 +54,7 @@ nav .nav-navigation-mobile li a {
 nav .nav-navigation-mobile #nav-logo {
   border-bottom: none;
   position: fixed;
-  top: 50px;
+  top: 1%;
   height: auto;
 }
 nav .nav-navigation-mobile #nav-logo img {
